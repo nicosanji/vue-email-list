@@ -24,15 +24,20 @@
         <div id="root">
 
             <div class="container py-3">
-                <h1 class="text-center">{{ titleH1 }}</h1>
+                <h1 class="text-center">{{titleH1}}</h1>
             </div>
 
             <div class="container">
-                <div class="col text-center">
+                <div class="col text-center my-3">
+                    <button type="button" class="btn btn-dark btn-lg btn-block"
+                        @click="getMailList">{{btnText}}</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col text-center my-3">
                     <ul class="list-group">
-                        <li class="list-group-item" v-for="(element, index) of esempioMailList">
-                            {{element.mail}}
-                        </li>
+                        <li class="list-group-item border-0 py-2" v-for="element in mailList">{{element}}</li>
                     </ul>
                 </div>
             </div>
