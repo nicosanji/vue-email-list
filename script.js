@@ -5,6 +5,8 @@
 // - Bonus: Far comparire gli indirizzi email solamente quando sono 
 //   stati tutti generati.
 
+"use strict";
+
 Vue.config.devtools = true;
 
 new Vue({
